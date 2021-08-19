@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Document Title -->
+		<title>Macaw Aurora Tabs - Macaw Tabs Plugin</title>
+
+		<!-- Fav Icon -->
+		<link rel="icon" type="image/png" href="./dist/images/favicon.png" />
+
+		<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- Icon Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+		<!-- Macaw Tabs -->
+    <!-- Macaw Tabs Reset is Optional -->
+		<link rel="stylesheet" href="./dist/css/macaw-aurora-tabs-reset.css" type="text/css" media="all" />
+    <!-- Macaw Tabs Theme -->
+		<link rel="stylesheet" href="./dist/css/macaw-aurora-tabs.css" type="text/css" media="all" />
+	</head>
+
+	<body class="home">
+    <!-- Begin .site-wrapper -->
+		<div class="site-wrapper">
+
+			<!-- Begin Header -->
+			<header>
+				<h1>Macaw Aurora Tabs - Macaw Tabs Plugin</h1>
+				<p>Accessible, Responsive & Friendly Tabs</p>
+        <hr>
+        <ul>
+          <li>Use <kbd>Arrow</kbd> keys to navigate tabs.</li>
+          <li>Display tab panel by pressing <kbd>Space</kbd> or <kbd>Enter</kbd>.</li>
+        </ul>
+			</header>
+			<!-- End Header -->
+
+			<!-- Begin Main -->
+			<main>
+        <!-- Begin .macaw-tabs -->
+        <div class="macaw-tabs macaw-aurora-tabs">
+          <div role="tablist" aria-label="Blog Navigation" aria-orientation="vertical">
+            <button role="tab" aria-selected="true" aria-controls="home-tab" id="home"><span class="material-icons icon">home</span> <span class="label">Home</span></button>
+            <button role="tab" aria-selected="false" aria-controls="blog-tab" id="blog" tabindex="-1"><span class="material-icons icon">wysiwyg</span> <span class="label">Blog</span></button>
+            <button role="tab" aria-selected="false" aria-controls="portfolio-tab" id="portfolio" tabindex="-1"><span class="material-icons icon">manage_accounts</span> <span class="label">Portfolio</span></button>
+            <button role="tab" aria-selected="false" aria-controls="branding-tab" id="branding" tabindex="-1"><span class="material-icons icon">lightbulb</span> <span class="label">Branding</span></button>
+          </div>
+
+          <div tabindex="0" role="tabpanel" aria-labelledby="home" id="home-tab">
+            <p>Vestibulum vitae <a href="#">feugiat quam</a>, eget porttitor lacus. Praesent blandit gravida neque at vestibulum. Nullam congue mauris massa, sit amet mattis leo fringilla nec. Quisque accumsan scelerisque leo eu laoreet. Aliquam libero tortor.</p>
+            <p>Cras volutpat diam quis odio cursus accumsan. Ut tincidunt cursus sagittis. Sed lobortis luctus interdum. Proin placerat, augue non placerat egestas, mi ante sagittis nulla, vitae auctor lectus sem varius nunc. Quisque at elit non nisl molestie consectetur. Vestibulum at accumsan diam. Sed eget cursus ipsum, in sagittis arcu. Nulla dolor dolor.</p>
+          </div>
+          <div tabindex="0" role="tabpanel" aria-labelledby="blog" id="blog-tab" hidden>
+            <p>Nullam est ipsum, vestibulum non ullamcorper vitae, <a href="#">volutpat vitae enim</a>. Donec ligula libero, sodales faucibus mauris ut, aliquet interdum sem. Pellentesque fermentum mi dignissim dui rhoncus pellentesque. Quisque blandit eros vel purus suscipit, sit amet aliquet leo lobortis.</p>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper tempor lacinia. Nunc commodo elit eu feugiat bibendum. Curabitur et dapibus libero. Vestibulum at accumsan diam. Sed eget cursus ipsum, in sagittis arcu. Nulla dolor dolor.</p>
+          </div>
+          <div tabindex="0" role="tabpanel" aria-labelledby="portfolio" id="portfolio-tab" hidden>
+            <p>Sed euismod arcu tincidunt metus dapibus ultrices. Morbi varius imperdiet tortor sit amet imperdiet. <a href="#">Donec at lacinia mi</a>. Suspendisse eget malesuada turpis. Duis sit amet velit neque. Mauris in elit purus. In nulla dui, pretium vitae feugiat a, luctus sit amet metus.</p>
+            <p>Ut eget consequat augue. Aenean consectetur, diam congue viverra lobortis, velit felis molestie nulla, at iaculis mi quam ut enim. Fusce in mattis ante, a ultricies lacus. Nunc vulputate consequat tellus ut convallis. Nullam vulputate pharetra dignissim. Praesent nec posuere nisl. Sed sollicitudin et nunc nec bibendum.</p>
+          </div>
+          <div tabindex="0" role="tabpanel" aria-labelledby="branding" id="branding-tab" hidden>
+            <p>Mauris semper ac <a href="#">libero ut blandit</a>. Vestibulum nec magna a tortor sodales sagittis sit amet nec lectus. Duis egestas ullamcorper nunc, vel sodales elit vestibulum non. Morbi interdum viverra elit non pharetra. Cras diam ligula, maximus in venenatis eu, varius ac urna. Fusce suscipit gravida diam, nec molestie mi facilisis eget.</p>
+            <p>Ut placerat malesuada libero fringilla elementum. Etiam finibus sollicitudin nisl, quis faucibus mauris pellentesque at. Morbi condimentum quis arcu nec rhoncus. Aliquam ultricies justo sed nulla efficitur, ac pulvinar neque commodo. Aenean ac commodo mauris, eget feugiat enim.</p>
+          </div>
+        </div>
+        <!-- End .macaw-tabs -->
+			</main>
+			<!-- End Main -->
+
+			<!-- Begin Footer -->
+			<footer>
+        <span><a href="https://htmlcssfreebies.com/macaw-aurora-tabs/" target="_blank">Macaw Aurora Tabs</a> by HTMLCSSFreebies</span>
+        <span>Powered by <a href="https://htmlcssfreebies.com/macaw-tabs/" target="_blank">Macaw Tabs</a>
+			</footer>
+			<!-- End Footer -->
+
+    </div>
+    <!-- End .site-wrapper -->
+
+    <!-- Javascript Files -->
+    <!-- jQuery Library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Macaw Tabs Plugin -->
+		<script src="./dist/js/macaw-tabs.js"></script>
+
+    <!-- Macaw Tabs Initialization -->
+		<script>
+			( function ( $ ) {
+				// Document Ready
+				$( function () {
+					$( '.macaw-tabs' ).macawTabs({
+            'autoVerticalOrientation': false,
+          });
+				} );
+			} )( jQuery );
+		</script>
+	</body>
+</html>
