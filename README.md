@@ -12,6 +12,7 @@ Design of vertical and horizontal tabs is very simple and easy with Macaw Tabs p
 - Horizontal Orientation Support
 - Tabs with Automatic Activation Support
 - Tabs with Manual Activation Support
+- Nested Tabs Support
 - Special Transition Class for Tab Panels
 - Keyboard Interaction Support
 - AI-ARIA Roles, States, and Properties Support
@@ -243,6 +244,7 @@ We are sharing Macaw Tab themes frequently to help you. Please have a look,
 
 - [CSS Tabs](https://htmlcssfreebies.com/tag/css-tabs/)
 - [Vertical Tabs](https://htmlcssfreebies.com/tag/vertical-tabs/)
+- [Nested Tabs](https://htmlcssfreebies.com/tag/nested-tabs/)
 - [Animate CSS Tab Example](https://htmlcssfreebies.com/macaw-aurora-tabs/), using [Animate CSS](https://animate.style/)
 
 Build With Love :heart:
