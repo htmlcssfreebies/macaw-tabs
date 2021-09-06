@@ -1,6 +1,6 @@
 {
   "name": "macaw-tabs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Macaw Tabs is jQuery plugin for HTML, CSS tabs. It is lightweight and easy to use. It implements the W3 design patterns for tabs.",
   "main": "./src/js/macaw-tabs.js",
   "scripts": {
@@ -25,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/htmlcssfreebies/macaw-tabs/issues"
   },
-  "homepage": "https://github.com/htmlcssfreebies/macaw-tabs#readme"
+  "homepage": "https://htmlcssfreebies.com/macaw-tabs/"
 }

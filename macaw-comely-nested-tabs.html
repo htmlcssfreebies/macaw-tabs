@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Document Title -->
+		<title>Macaw Comely Nested Tabs - Macaw Tabs Plugin</title>
+
+		<!-- Fav Icon -->
+		<link rel="icon" type="image/png" href="./dist/images/favicon.png" />
+
+		<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- Icon Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+		<!-- Macaw Tabs -->
+    <!-- Macaw Tabs Reset is Optional -->
+		<link rel="stylesheet" href="./dist/css/macaw-aurora-tabs-reset.css" type="text/css" media="all" />
+    <!-- Macaw Aurora Tabs Theme -->
+		<link rel="stylesheet" href="./dist/css/macaw-aurora-tabs.css" type="text/css" media="all" />
+    <!-- Macaw Silk Tabs Theme -->
+		<link rel="stylesheet" href="./dist/css/macaw-silk-tabs.css" type="text/css" media="all" />
+	</head>
+
+	<body class="home">
+    <!-- Begin .site-wrapper -->
+		<div class="site-wrapper">
+
+			<!-- Begin Header -->
+			<header>
+				<h1>Macaw Comely Nested Tabs - Macaw Tabs Plugin</h1>
+				<p>Accessible, Responsive & Friendly Tabs</p>
+        <hr>
+        <ul>
+          <li>Use <kbd>Arrow</kbd> keys to navigate tabs.</li>
+          <li>Display tab panel by pressing <kbd>Space</kbd> or <kbd>Enter</kbd>.</li>
+        </ul>
+			</header>
+			<!-- End Header -->
+
+			<!-- Begin Main -->
+			<main>
+        <!-- Begin .macaw-tabs -->
+        <div class="macaw-tabs macaw-aurora-tabs">
+          <div role="tablist" aria-label="Lifestyle" aria-orientation="vertical">
+            <button role="tab" aria-selected="true" aria-controls="fashion-tab" id="fashion"><span class="material-icons icon">shopping_bag</span> <span class="label">Fashion</span></button>
+            <button role="tab" aria-selected="false" aria-controls="beauty-tab" id="beauty" tabindex="-1"><span class="material-icons icon">face</span> <span class="label">Beauty</span></button>
+            <button role="tab" aria-selected="false" aria-controls="lifestyle-tab" id="lifestyle" tabindex="-1"><span class="material-icons icon">group_work</span> <span class="label">Lifestyle</span></button>
+            <button role="tab" aria-selected="false" aria-controls="runway-tab" id="runway" tabindex="-1"><span class="material-icons icon">flight_takeoff</span> <span class="label">Runway</span></button>
+          </div>
+
+          <div tabindex="0" role="tabpanel" aria-labelledby="fashion" id="fashion-tab">
+            <!-- Begin .macaw-tabs -->
+            <div class="macaw-tabs macaw-silk-tabs">
+              <div role="tablist" aria-label="Fashion Trends">
+                <button role="tab" aria-selected="true" aria-controls="bags-tab" id="bags"><span class="material-icons icon">card_giftcard</span> <span class="label">Bags</span></button>
+                <button role="tab" aria-selected="false" aria-controls="shoes-tab" id="shoes" tabindex="-1"><span class="material-icons icon">close_fullscreen</span> <span class="label">Shoes</span></button>
+                <button role="tab" aria-selected="false" aria-controls="jewelry-tab" id="jewelry" tabindex="-1"><span class="material-icons icon">loyalty</span> <span class="label">Jewelry</span></button>
+                <button role="tab" aria-selected="false" aria-controls="glasses-tab" id="glasses" tabindex="-1"><span class="material-icons icon">tips_and_updates</span> <span class="label">Glasses</span></button>
+              </div>
+
+              <div tabindex="0" role="tabpanel" aria-labelledby="bags" id="bags-tab">
+                <p>Bags Vestibulum vitae <a href="#">feugiat quam</a>, eget porttitor lacus. Praesent blandit gravida neque at vestibulum. Nullam congue mauris massa, sit amet mattis leo fringilla nec. Quisque accumsan scelerisque leo eu laoreet. Aliquam libero tortor.</p>
+                <p>Cras volutpat diam quis odio cursus accumsan. Ut tincidunt cursus sagittis. Sed lobortis luctus interdum. Proin placerat, augue non placerat egestas, mi ante sagittis nulla, vitae auctor lectus sem varius nunc. Quisque at elit non nisl molestie consectetur. Vestibulum at accumsan diam. Sed eget cursus ipsum, in sagittis arcu. Nulla dolor dolor.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="shoes" id="shoes-tab" hidden>
+                <p>Shoes Nullam est ipsum, vestibulum non ullamcorper vitae, <a href="#">volutpat vitae enim</a>. Donec ligula libero, sodales faucibus mauris ut, aliquet interdum sem. Pellentesque fermentum mi dignissim dui rhoncus pellentesque. Quisque blandit eros vel purus suscipit, sit amet aliquet leo lobortis.</p>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper tempor lacinia. Nunc commodo elit eu feugiat bibendum. Curabitur et dapibus libero. Vestibulum at accumsan diam. Sed eget cursus ipsum, in sagittis arcu. Nulla dolor dolor.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="jewelry" id="jewelry-tab" hidden>
+                <p>Jewelry Sed euismod arcu tincidunt metus dapibus ultrices. Morbi varius imperdiet tortor sit amet imperdiet. <a href="#">Donec at lacinia mi</a>. Suspendisse eget malesuada turpis. Duis sit amet velit neque. Mauris in elit purus. In nulla dui, pretium vitae feugiat a, luctus sit amet metus.</p>
+                <p>Ut eget consequat augue. Aenean consectetur, diam congue viverra lobortis, velit felis molestie nulla, at iaculis mi quam ut enim. Fusce in mattis ante, a ultricies lacus. Nunc vulputate consequat tellus ut convallis. Nullam vulputate pharetra dignissim. Praesent nec posuere nisl. Sed sollicitudin et nunc nec bibendum.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="glasses" id="glasses-tab" hidden>
+                <p>Glasses Mauris semper ac <a href="#">libero ut blandit</a>. Vestibulum nec magna a tortor sodales sagittis sit amet nec lectus. Duis egestas ullamcorper nunc, vel sodales elit vestibulum non. Morbi interdum viverra elit non pharetra. Cras diam ligula, maximus in venenatis eu, varius ac urna. Fusce suscipit gravida diam, nec molestie mi facilisis eget.</p>
+                <p>Ut placerat malesuada libero fringilla elementum. Etiam finibus sollicitudin nisl, quis faucibus mauris pellentesque at. Morbi condimentum quis arcu nec rhoncus. Aliquam ultricies justo sed nulla efficitur, ac pulvinar neque commodo. Aenean ac commodo mauris, eget feugiat enim.</p>
+              </div>
+            </div>
+            <!-- End .macaw-tabs -->
+          </div>
+          <div tabindex="0" role="tabpanel" aria-labelledby="beauty" id="beauty-tab" hidden>
+            <!-- Begin .macaw-tabs -->
+            <div class="macaw-tabs macaw-silk-tabs">
+              <div role="tablist" aria-label="Beauty Trends">
+                <button role="tab" aria-selected="true" aria-controls="hair-tab" id="hair"><span class="material-icons icon">settings_backup_restore</span> <span class="label">Hair</span></button>
+                <button role="tab" aria-selected="false" aria-controls="skincare-tab" id="skincare" tabindex="-1"><span class="material-icons icon">tour</span> <span class="label">Skincare</span></button>
+                <button role="tab" aria-selected="false" aria-controls="wellness-tab" id="wellness" tabindex="-1"><span class="material-icons icon">settings_input_component</span> <span class="label">Wellness</span></button>
+                <button role="tab" aria-selected="false" aria-controls="celebrity-tab" id="celebrity" tabindex="-1"><span class="material-icons icon">hotel_class</span> <span class="label">Celebrity</span></button>
+              </div>
+
+              <div tabindex="0" role="tabpanel" aria-labelledby="hair" id="hair-tab">
+                <p>Hair Vestibulum vitae <a href="#">feugiat quam</a>, eget porttitor lacus. Praesent blandit gravida neque at vestibulum. Nullam congue mauris massa, sit amet mattis leo fringilla nec. Quisque accumsan scelerisque leo eu laoreet. Aliquam libero tortor.</p>
+                <p>Cras volutpat diam quis odio cursus accumsan. Ut tincidunt cursus sagittis. Sed lobortis luctus interdum. Proin placerat, augue non placerat egestas, mi ante sagittis nulla, vitae auctor lectus sem varius nunc. Quisque at elit non nisl molestie consectetur. Vestibulum at accumsan diam. Sed eget cursus ipsum, in sagittis arcu. Nulla dolor dolor.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="skincare" id="skincare-tab" hidden>
+                <p>Skincare Nullam est ipsum, vestibulum non ullamcorper vitae, <a href="#">volutpat vitae enim</a>. Donec ligula libero, sodales faucibus mauris ut, aliquet interdum sem. Pellentesque fermentum mi dignissim dui rhoncus pellentesque. Quisque blandit eros vel purus suscipit, sit amet aliquet leo lobortis.</p>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper tempor lacinia. Nunc commodo elit eu feugiat bibendum. Curabitur et dapibus libero. Vestibulum at accumsan diam. Sed eget cursus ipsum, in sagittis arcu. Nulla dolor dolor.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="wellness" id="wellness-tab" hidden>
+                <p>Wellness Sed euismod arcu tincidunt metus dapibus ultrices. Morbi varius imperdiet tortor sit amet imperdiet. <a href="#">Donec at lacinia mi</a>. Suspendisse eget malesuada turpis. Duis sit amet velit neque. Mauris in elit purus. In nulla dui, pretium vitae feugiat a, luctus sit amet metus.</p>
+                <p>Ut eget consequat augue. Aenean consectetur, diam congue viverra lobortis, velit felis molestie nulla, at iaculis mi quam ut enim. Fusce in mattis ante, a ultricies lacus. Nunc vulputate consequat tellus ut convallis. Nullam vulputate pharetra dignissim. Praesent nec posuere nisl. Sed sollicitudin et nunc nec bibendum.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="celebrity" id="celebrity-tab" hidden>
+                <p>Celebrity Mauris semper ac <a href="#">libero ut blandit</a>. Vestibulum nec magna a tortor sodales sagittis sit amet nec lectus. Duis egestas ullamcorper nunc, vel sodales elit vestibulum non. Morbi interdum viverra elit non pharetra. Cras diam ligula, maximus in venenatis eu, varius ac urna. Fusce suscipit gravida diam, nec molestie mi facilisis eget.</p>
+                <p>Ut placerat malesuada libero fringilla elementum. Etiam finibus sollicitudin nisl, quis faucibus mauris pellentesque at. Morbi condimentum quis arcu nec rhoncus. Aliquam ultricies justo sed nulla efficitur, ac pulvinar neque commodo. Aenean ac commodo mauris, eget feugiat enim.</p>
+              </div>
+            </div>
+            <!-- End .macaw-tabs -->
+          </div>
+          <div tabindex="0" role="tabpanel" aria-labelledby="lifestyle" id="lifestyle-tab" hidden>
+            <!-- Begin .macaw-tabs -->
+            <div class="macaw-tabs macaw-silk-tabs">
+              <div role="tablist" aria-label="Arts & Lifestyle">
+                <button role="tab" aria-selected="true" aria-controls="food-tab" id="food"><span class="material-icons icon">generating_tokens</span> <span class="label">Food</span></button>
+                <button role="tab" aria-selected="false" aria-controls="travel-tab" id="travel" tabindex="-1"><span class="material-icons icon">rowing</span> <span class="label">Travel</span></button>
+                <button role="tab" aria-selected="false" aria-controls="art-tab" id="art" tabindex="-1"><span class="material-icons icon">alarm_add</span> <span class="label">Art</span></button>
+                <button role="tab" aria-selected="false" aria-controls="interior-tab" id="interior" tabindex="-1"><span class="material-icons icon">shop_two</span> <span class="label">Interior</span></button>
+              </div>
+
+              <div tabindex="0" role="tabpanel" aria-labelledby="food" id="food-tab">
+                <p>Food Vestibulum vitae <a href="#">feugiat quam</a>, eget porttitor lacus. Praesent blandit gravida neque at vestibulum. Nullam congue mauris massa, sit amet mattis leo fringilla nec. Quisque accumsan scelerisque leo eu laoreet. Aliquam libero tortor.</p>
+                <p>Cras volutpat diam quis odio cursus accumsan. Ut tincidunt cursus sagittis. Sed lobortis luctus interdum. Proin placerat, augue non placerat egestas, mi ante sagittis nulla, vitae auctor lectus sem varius nunc. Quisque at elit non nisl molestie consectetur. Vestibulum at accumsan diam. Sed eget cursus ipsum, in sagittis arcu. Nulla dolor dolor.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="travel" id="travel-tab" hidden>
+                <p>Travel Nullam est ipsum, vestibulum non ullamcorper vitae, <a href="#">volutpat vitae enim</a>. Donec ligula libero, sodales faucibus mauris ut, aliquet interdum sem. Pellentesque fermentum mi dignissim dui rhoncus pellentesque. Quisque blandit eros vel purus suscipit, sit amet aliquet leo lobortis.</p>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper tempor lacinia. Nunc commodo elit eu feugiat bibendum. Curabitur et dapibus libero. Vestibulum at accumsan diam. Sed eget cursus ipsum, in sagittis arcu. Nulla dolor dolor.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="art" id="art-tab" hidden>
+                <p>Art Sed euismod arcu tincidunt metus dapibus ultrices. Morbi varius imperdiet tortor sit amet imperdiet. <a href="#">Donec at lacinia mi</a>. Suspendisse eget malesuada turpis. Duis sit amet velit neque. Mauris in elit purus. In nulla dui, pretium vitae feugiat a, luctus sit amet metus.</p>
+                <p>Ut eget consequat augue. Aenean consectetur, diam congue viverra lobortis, velit felis molestie nulla, at iaculis mi quam ut enim. Fusce in mattis ante, a ultricies lacus. Nunc vulputate consequat tellus ut convallis. Nullam vulputate pharetra dignissim. Praesent nec posuere nisl. Sed sollicitudin et nunc nec bibendum.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="interior" id="interior-tab" hidden>
+                <p>Interior Mauris semper ac <a href="#">libero ut blandit</a>. Vestibulum nec magna a tortor sodales sagittis sit amet nec lectus. Duis egestas ullamcorper nunc, vel sodales elit vestibulum non. Morbi interdum viverra elit non pharetra. Cras diam ligula, maximus in venenatis eu, varius ac urna. Fusce suscipit gravida diam, nec molestie mi facilisis eget.</p>
+                <p>Ut placerat malesuada libero fringilla elementum. Etiam finibus sollicitudin nisl, quis faucibus mauris pellentesque at. Morbi condimentum quis arcu nec rhoncus. Aliquam ultricies justo sed nulla efficitur, ac pulvinar neque commodo. Aenean ac commodo mauris, eget feugiat enim.</p>
+              </div>
+            </div>
+            <!-- End .macaw-tabs -->
+          </div>
+          <div tabindex="0" role="tabpanel" aria-labelledby="runway" id="runway-tab" hidden>
+            <!-- Begin .macaw-tabs -->
+            <div class="macaw-tabs macaw-silk-tabs">
+              <div role="tablist" aria-label="Runway">
+                <button role="tab" aria-selected="true" aria-controls="shows-tab" id="shows"><span class="material-icons icon">language</span> <span class="label">Shows</span></button>
+                <button role="tab" aria-selected="false" aria-controls="seasons-tab" id="seasons" tabindex="-1"><span class="material-icons icon">filter_alt</span> <span class="label">Seasons</span></button>
+                <button role="tab" aria-selected="false" aria-controls="designers-tab" id="designers" tabindex="-1"><span class="material-icons icon">verified</span> <span class="label">Designers</span></button>
+                <button role="tab" aria-selected="false" aria-controls="featured-tab" id="featured" tabindex="-1"><span class="material-icons icon">build</span> <span class="label">Featured</span></button>
+              </div>
+
+              <div tabindex="0" role="tabpanel" aria-labelledby="shows" id="shows-tab">
+                <p>Shows Vestibulum vitae <a href="#">feugiat quam</a>, eget porttitor lacus. Praesent blandit gravida neque at vestibulum. Nullam congue mauris massa, sit amet mattis leo fringilla nec. Quisque accumsan scelerisque leo eu laoreet. Aliquam libero tortor.</p>
+                <p>Cras volutpat diam quis odio cursus accumsan. Ut tincidunt cursus sagittis. Sed lobortis luctus interdum. Proin placerat, augue non placerat egestas, mi ante sagittis nulla, vitae auctor lectus sem varius nunc. Quisque at elit non nisl molestie consectetur. Vestibulum at accumsan diam. Sed eget cursus ipsum, in sagittis arcu. Nulla dolor dolor.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="seasons" id="seasons-tab" hidden>
+                <p>Seasons Nullam est ipsum, vestibulum non ullamcorper vitae, <a href="#">volutpat vitae enim</a>. Donec ligula libero, sodales faucibus mauris ut, aliquet interdum sem. Pellentesque fermentum mi dignissim dui rhoncus pellentesque. Quisque blandit eros vel purus suscipit, sit amet aliquet leo lobortis.</p>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut ullamcorper tempor lacinia. Nunc commodo elit eu feugiat bibendum. Curabitur et dapibus libero. Vestibulum at accumsan diam. Sed eget cursus ipsum, in sagittis arcu. Nulla dolor dolor.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="designers" id="designers-tab" hidden>
+                <p>Designers Sed euismod arcu tincidunt metus dapibus ultrices. Morbi varius imperdiet tortor sit amet imperdiet. <a href="#">Donec at lacinia mi</a>. Suspendisse eget malesuada turpis. Duis sit amet velit neque. Mauris in elit purus. In nulla dui, pretium vitae feugiat a, luctus sit amet metus.</p>
+                <p>Ut eget consequat augue. Aenean consectetur, diam congue viverra lobortis, velit felis molestie nulla, at iaculis mi quam ut enim. Fusce in mattis ante, a ultricies lacus. Nunc vulputate consequat tellus ut convallis. Nullam vulputate pharetra dignissim. Praesent nec posuere nisl. Sed sollicitudin et nunc nec bibendum.</p>
+              </div>
+              <div tabindex="0" role="tabpanel" aria-labelledby="featured" id="featured-tab" hidden>
+                <p>Featured Mauris semper ac <a href="#">libero ut blandit</a>. Vestibulum nec magna a tortor sodales sagittis sit amet nec lectus. Duis egestas ullamcorper nunc, vel sodales elit vestibulum non. Morbi interdum viverra elit non pharetra. Cras diam ligula, maximus in venenatis eu, varius ac urna. Fusce suscipit gravida diam, nec molestie mi facilisis eget.</p>
+                <p>Ut placerat malesuada libero fringilla elementum. Etiam finibus sollicitudin nisl, quis faucibus mauris pellentesque at. Morbi condimentum quis arcu nec rhoncus. Aliquam ultricies justo sed nulla efficitur, ac pulvinar neque commodo. Aenean ac commodo mauris, eget feugiat enim.</p>
+              </div>
+            </div>
+            <!-- End .macaw-tabs -->
+          </div>
+        </div>
+        <!-- End .macaw-tabs -->
+			</main>
+			<!-- End Main -->
+
+			<!-- Begin Footer -->
+			<footer>
+        <span><a href="https://htmlcssfreebies.com/macaw-comely-nested-tabs/" target="_blank">Macaw Comely Nested Tabs</a> by HTMLCSSFreebies</span>
+        <span>Powered by <a href="https://htmlcssfreebies.com/macaw-tabs/" target="_blank">Macaw Tabs</a>
+			</footer>
+			<!-- End Footer -->
+
+    </div>
+    <!-- End .site-wrapper -->
+
+    <!-- Javascript Files -->
+    <!-- jQuery Library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Macaw Tabs Plugin -->
+		<script src="./dist/js/macaw-tabs.js"></script>
+
+    <!-- Macaw Tabs Initialization -->
+		<script>
+			( function ( $ ) {
+				// Document Ready
+				$( function () {
+          // Main Tabs
+					$( '.macaw-aurora-tabs' ).macawTabs({
+            'autoVerticalOrientation': false,
+          });
+
+          // Nested Tabs
+					$( '.macaw-silk-tabs' ).macawTabs();
+				} );
+			} )( jQuery );
+		</script>
+	</body>
+</html>

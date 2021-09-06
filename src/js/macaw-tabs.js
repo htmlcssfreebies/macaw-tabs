@@ -4,7 +4,7 @@
  * @author    https://htmlcssfreebies.com/macaw-tabs/
  * @copyright Copyright (c) 2021  HTMLCSSFreebies.com
  * @license   MIT License, https://opensource.org/licenses/MIT
- * @version   v1.0.0
+ * @version   v1.1
  */
 
 ( function( $ ) {
@@ -75,7 +75,7 @@
 		const { parentThis, settings } = parentObj;
 
 		// Tab List
-		const $tabList = parentThis.find( '[role=tablist]' );
+		const $tabList = parentThis.find( '> [role=tablist]' );
 
 		// Tab Orientation
 		parentThis.removeClass( 'vertical' );
@@ -95,16 +95,11 @@
 		const { parentThis, settings } = parentObj;
 
 		// Active Tab and Tab Panel
-		const $tab = parentThis.find( '[role=tab][aria-selected=true]' );
+		const $tab = parentThis.find( '> [role=tablist] > [role=tab][aria-selected=true]' );
 		const $tabPanel = $( `#${ $tab.attr( 'aria-controls' ) }` );
 
 		// Tab Panel Active Class Logic
 		if ( true === settings.tabPanelTransitionLogic ) {
-			// Tab Panel Clear Timeout
-			if ( settings.tabPanelTransitionTimeout ) {
-				clearTimeout( settings.tabPanelTransitionTimeout );
-			}
-
 			// Tab Panel Active Class
 			settings.tabPanelTransitionTimeout = setTimeout( () => {
 				$tabPanel.addClass( settings.tabPanelTransitionClass );
@@ -121,8 +116,8 @@
 		const { parentThis, settings } = parentObj;
 
 		// Tabs and Tab Panels
-		const $tabs = parentThis.find( '[role=tab]' );
-		const $tabsPanel = parentThis.find( '[role=tabpanel]' );
+		const $tabs = parentThis.find( '> [role=tablist] > [role=tab]' );
+		const $tabsPanel = parentThis.find( '> [role=tabpanel]' );
 
 		// Tabs Deactivation Logic
 		$tabs.attr( 'tabindex', '-1' );
@@ -143,22 +138,25 @@
 		// Parent Object
 		const { parentThis, settings } = parentObj;
 
-		// Deactivate All Tabs and Tabs Panel
-		deactivateTabs( parentObj );
+		// Make sure tab is not already activated.
+		if ( 'true' !== tab.attr( 'aria-selected' ) ) {
+			// Deactivate All Tabs and Tabs Panel
+			deactivateTabs( parentObj );
 
-		// Tab Activation Logic
-		tab.removeAttr( 'tabindex' );
-		tab.attr( 'aria-selected', 'true' );
+			// Tab Activation Logic
+			tab.removeAttr( 'tabindex' );
+			tab.attr( 'aria-selected', 'true' );
 
-		// Tab Panel Activation Logic
-		const $tabPanel = $( `#${ tab.attr( 'aria-controls' ) }` );
-		$tabPanel.removeAttr( 'hidden' );
+			// Tab Panel Activation Logic
+			const $tabPanel = $( `#${ tab.attr( 'aria-controls' ) }` );
+			$tabPanel.removeAttr( 'hidden' );
 
-		// Tab Panel Transition
-		tabPanelTransition( parentObj );
+			// Tab Panel Transition
+			tabPanelTransition( parentObj );
 
-		// Callback
-		settings.onTabActivation.call( { parentThis, tab } );
+			// Callback
+			settings.onTabActivation.call( { parentThis, tab } );
+		}
 	};
 
 	//
@@ -206,7 +204,7 @@
 		const { parentThis, settings } = parentObj;
 
 		// Tabs
-		const $tabs = parentThis.find( '[role=tab]' );
+		const $tabs = parentThis.find( '> [role=tablist] > [role=tab]' );
 
 		// First Tab
 		const tab = $tabs[ 0 ];
@@ -229,7 +227,7 @@
 		const { parentThis, settings } = parentObj;
 
 		// Tabs
-		const $tabs = parentThis.find( '[role=tab]' );
+		const $tabs = parentThis.find( '> [role=tablist] > [role=tab]' );
 
 		// Last Tab
 		const tab = $tabs[ ( $tabs.length ) - 1 ];
@@ -270,7 +268,7 @@
 		const { parentThis } = parentObj;
 
 		// Tabs Object within Scope
-		const $tabs = parentThis.find( '[role=tab]' );
+		const $tabs = parentThis.find( '> [role=tablist] > [role=tab]' );
 
 		$tabs.off( 'click' ).on( 'click', function( e ) {
 			// Prevent Default
@@ -291,8 +289,8 @@
 		const { parentThis } = parentObj;
 
 		// Tabs and Tablist
-		const $tabs = parentThis.find( '[role=tab]' );
-		const $tablist = parentThis.find( '[role=tablist]' );
+		const $tabs = parentThis.find( '> [role=tablist] > [role=tab]' );
+		const $tablist = parentThis.find( '> [role=tablist]' );
 
 		// Orientation Attribute
 		const orientation = $tablist.attr( 'aria-orientation' );

@@ -4,5 +4,5 @@
  * @author    https://htmlcssfreebies.com/macaw-tabs/
  * @copyright Copyright (c) 2021  HTMLCSSFreebies.com
  * @license   MIT License, https://opensource.org/licenses/MIT
- * @version   v1.0.0
+ * @version   v1.1
  */
